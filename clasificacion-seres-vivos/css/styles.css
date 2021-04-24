@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Calibri;
+    background-image: url(../img/fondo.webp);
+}
+
+main {
+    padding: 0 2vw;
+    text-align: center;
+}
+
+main h1 {
+    display: inline-block;
+    color: #369C7C;
+    background-color: #4DDBAE;
+    border-radius: 30px;
+    padding: 1vh 1vw;
+}
+
+main section {
+    text-align: justify;
+    font-size: 24px;
+    color: rgb(209, 233, 255);
+    background-color: #44C29A;
+    border-radius: 30px;
+    margin: 4vh 4vw;
+    padding: 1vh 3vw 2vh;
+}
+
+section h2 {
+    margin: auto;
+    color: #205C49;
+}
+
+section h3 {
+    color: #237259;
+}
+
+.subimg {
+    padding-top: 2vh;
+    text-align: center;
+}
+
+.subimg img {
+    border: 3px solid rgb(174, 246, 255);
+    border-radius: 70px;
+    max-width: 35vw;
+    max-height: 15vh;
+    width: auto;
+}
+
+.padding1w {
+    padding-left: 1vw;
+}
