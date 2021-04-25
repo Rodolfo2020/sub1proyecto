@@ -48,6 +48,6 @@ section h3 {
     width: auto;
 }
 
-.padding1w {
-    padding-left: 1vw;
+.microbios {
+    list-style-image: url('../img/microbio.png');
 }
