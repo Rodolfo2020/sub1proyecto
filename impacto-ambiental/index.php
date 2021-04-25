@@ -16,7 +16,7 @@
 </head>
 <body>
 <?php
-    $navbar = str_replace('<a href="/impacto-ambiental/">','<a href="/impacto-ambiental/" class="active">',file_get_contents('..\views\navbar.php'));
+    $navbar = str_replace('>Impacto ambiental</a>',' class="active">Impacto ambiental</a>',file_get_contents('..\views\navbar.php'));
     echo $navbar;
     ?>
 	<center class="testbox">

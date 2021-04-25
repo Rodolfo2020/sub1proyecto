@@ -11,7 +11,7 @@
 	<aside>
 	<section>
     <?php
-    $navbar = str_replace('<a href="/sustentabilidad/">','<a href="/sustentabilidad/" class="active">',file_get_contents('..\views\navbar.php'));
+    $navbar = str_replace('>Sustentabilidad</a>',' class="active">Sustentabilidad</a>',file_get_contents('..\views\navbar.php'));
     echo $navbar;
     ?>
 </section>

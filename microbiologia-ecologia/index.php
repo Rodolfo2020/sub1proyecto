@@ -12,7 +12,7 @@
 
 <body>
     <?php
-    $navbar = str_replace('<a href="/microbiologia-ecologia/">', '<a href="/microbiologia-ecologia/" class="active">', file_get_contents('..\views\navbar.php'));
+    $navbar = str_replace('>Microbios y ecologia</a>', ' class="active">Microbios y ecologia</a>', file_get_contents('..\views\navbar.php'));
     echo $navbar;
     ?>
     <main>

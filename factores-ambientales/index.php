@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-    $navbar = str_replace('<a href="/factores-ambientales/">','<a href="/factores-ambientales/" class="active">',file_get_contents('..\views\navbar.php'));
+    $navbar = str_replace('>Factores ambientales</a>',' class="active">Factores ambientales</a>',file_get_contents('..\views\navbar.php'));
     echo $navbar;
     ?>
 	<center class="testbox">

@@ -12,7 +12,7 @@
 	<aside>
 		<section>
 		<?php
-    $navbar = str_replace('<a href="/">','<a href="/" class="active">',file_get_contents('views\navbar.php'));
+    $navbar = str_replace('>Inicio</a>',' class="active">Inicio</a>',file_get_contents('views\navbar.php'));
     echo $navbar;
     ?>
 	</section>

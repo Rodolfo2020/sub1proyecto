@@ -12,7 +12,7 @@
 
 <body>
     <?php
-    $navbar = str_replace('<a href="/clasificacion-seres-vivos/">','<a href="/clasificacion-seres-vivos/" class="active">',file_get_contents('..\views\navbar.php'));
+    $navbar = str_replace('>Clasificiacion de los seres vivos</a>',' class="active">Clasificiacion de los seres vivos</a>',file_get_contents('..\views\navbar.php'));
     echo $navbar;
     ?>
     <main>

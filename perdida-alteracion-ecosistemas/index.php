@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-    $navbar = str_replace('<a href="/perdida-alteracion-ecosistemas/">','<a href="/perdida-alteracion-ecosistemas/" class="active">',file_get_contents('..\views\navbar.php'));
+    $navbar = str_replace('>Perdida y alteracion de los ecosistemas</a>',' class="active">Perdida y alteracion de los ecosistemas</a>',file_get_contents('..\views\navbar.php'));
     echo $navbar;
     ?>
 	<center class="testbox">

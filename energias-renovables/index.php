@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-    $navbar = str_replace('<a href="/energias-renovables/">','<a href="/energias-renovables/" class="active">',file_get_contents('..\views\navbar.php'));
+    $navbar = str_replace('>Energias renovables</a>',' class="active">Energias renovables</a>',file_get_contents('..\views\navbar.php'));
     echo $navbar;
     ?>
 	<center class="testbox">
