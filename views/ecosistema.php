@@ -2,16 +2,19 @@
 <html>
 
 <head>
-    <title>Ecosistema</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosistemas</title>
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 
 <body>
     <aside>
         <section>
         <?php
-    $navbar = str_replace('>Ecosistemas</a>',' class="active">Ecosistemas</a>',file_get_contents('..\views\navbar.php'));
+    $navbar = str_replace('<a href="ecosistema.php">','<a class="active" onclick="responsive()">',file_get_contents('navbar.php'));
     echo $navbar;
     ?>
         </section>
@@ -22,7 +25,7 @@
         lugar no tan grande como puede ser un lago o incluso a un lugar muy pequeño como puede ser un lago.<br>
     </center>
     <center>
-        <img src="Ecosistema.jpg" tittle="Ecosistema" width="400" height="200" ;>
+        <img src="../img/Ecosistema.jpg" tittle="Ecosistema" width="400" height="200" ;>
     </center>
     <center class="testbox">
         <h1 style="color:blue;">Biotopo y Biocenosis</h1>
@@ -30,20 +33,20 @@
         la forman todos los seres vivos que habitan en el biotopo, es decir, los factores bioticos (que tienen vida) del ecosistema. la comunidad biológica o biocenosis esta formada por organismos de diferentes especies.
     </center>
     <center>
-        <img src="bioybio.jpg" title="BiocenosisyBiotopo width300" height="200" ;>
+        <img src="../img/bioybio.jpg" title="BiocenosisyBiotopo width300" height="200" ;>
     </center>
     <center class="testbox">
         <b>IMPORTANTE: un ecosistema no sólo es la biocenosis y el biotopo, tenemos que añadirle la interacción que hacen estas especies con su medio: el biotopo.</b><br> Por ejemplo: cuando un zorro esta bebiendo agua existe una interacción entre algo
         vivo(Biocenosis) con algo que no tiene vida(el biotopo), otro ejemplo es cuando una nutria se esta refugiando en una roca con forma de madriguera hay una interacción entre la biocenosis(la nutria) con el biotopo(la roca.)
     </center>
-    <center> <img src="nutria.jpg" title="Nutria y una roca" width="300" height="200" ;></center>
+    <center> <img src="../img/nutria.jpg" title="Nutria y una roca" width="300" height="200" ;></center>
     <center class="cuadro1">
         LAS DIFERENTES INTERACCIONES ENTRE LOS DISTINTOS ELEMENTOS VIVOS DE UN ECOSISTEMA PUEDEN SER ENTRE ORGANISMOS DE LA MISMA ESPECIE LLAMADAS "relaciones interespecificas" y "relaciones intraespecificas".<br>
         <b>Relacion intraespecifica: Ecosistema formado por la misma especie de organismo</b> Algunas relaciones intra especificas son:
         <ul>
             <li><b>Competencia intraespecifica</b></li>Cuando una poblacion crece los recursos se vuelven limitados, por lo que los individuos compiten por obtener ese recurso.<br>
             <li><b>Asociaciones</b></li>En ellas los individuos se unen para obtener beneficios entre ellos.<br>
-            <center><img src="manada.jpg" title="manada" width="300" height="200" ;></center>
+            <center><img src="../img/manada.jpg" title="manada" width="300" height="200" ;></center>
         </ul>
     </center>
     <center class="cuadro1">
@@ -54,7 +57,7 @@
             <li><b>Mutualismo</b></li>Las dos especies resultan beneficiadas de su union.<br>
             <li><b>Comensalismo</b></li>Una especie resulta beneficiada y la otra no se beneficia ni se perjudica dela relacion.<br>
         </ul>
-        <img src="depredacion.jpg" title="depredacion" width="300" height="200">
+        <img src="../img/depredacion.jpg" title="depredacion" width="300" height="200">
     </center>
 </body>
 

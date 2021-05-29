@@ -3,20 +3,20 @@
 <body bgcolor="#0AD5C0">
 <style>
 	body{
-		background-image: url(fondo.webp);
+		background-image: url(../img/fondo.webp);
 	}
 </style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ecologia</title>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-	<link rel="stylesheet" href="../../css/navbar.css">
+	<title>Impacto ambiental</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body>
 <?php
-    $navbar = str_replace('>Impacto ambiental</a>',' class="active">Impacto ambiental</a>',file_get_contents('..\views\navbar.php'));
+    $navbar = str_replace('<a href="impacto-ambiental.php">','<a class="active" onclick="responsive()">',file_get_contents('navbar.php'));
     echo $navbar;
     ?>
 	<center class="testbox">
@@ -29,10 +29,10 @@
 			<h3>Un cambio climático se define​​ como la variación en el estado del sistema climático terrestre, formado por la atmósfera, la hidrosfera, la criosfera, la litosfera y la biosfera, que perdura durante periodos de tiempo suficientemente largos hasta alcanzar un nuevo equilibrio. Puede afectar tanto a los valores medios meteorológicos como a su variabilidad y extremos.</h3>
 	</center>
 	<center>	
-		<img src="clima.jpg" alt="Cambio climático" title="Cambio climático"> 
+		<img src="../img/clima.jpg" alt="Cambio climático" title="Cambio climático">
 	</center>
 		<br> <br>
-<center class="testbox2">
+<center class="testbox">
 	<h3 >Causas del cambio climático</h3>
 	<ul align="left">
 		<li>Transporte contaminante</li>

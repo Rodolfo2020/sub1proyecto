@@ -1,11 +1,21 @@
-    <nav class="navmain">
-        <a href="/sub1proyecto/">Inicio</a>
-        <a href="/sub1proyecto/sustentabilidad/">Sustentabilidad</a>
-        <a href="/sub1proyecto/ecosistema/">Ecosistemas</a>
-        <a href="/sub1proyecto/factores-ambientales/">Factores ambientales</a>
-        <a href="/sub1proyecto/clasificacion-seres-vivos/">Clasificiacion de los seres vivos</a>
-        <a href="/sub1proyecto/microbiologia-ecologia/">Microbios y ecologia</a>
-        <a href="/sub1proyecto/impacto-ambiental/">Impacto ambiental</a>
-        <a href="/sub1proyecto/perdida-alteracion-ecosistemas/">Perdida y alteracion de los ecosistemas</a>
-        <a href="/sub1proyecto/energias-renovables/">Energias renovables</a>
+    <nav id="mainNavbar" class="navmain">
+        <a href="./">Inicio</a>
+        <a href="sustentabilidad.php">Sustentabilidad</a>
+        <a href="ecosistema.php">Ecosistemas</a>
+        <a href="factores-ambientales.php">Factores ambientales</a>
+        <a href="clasificacion-seres-vivos.php">Clasificiacion de los seres vivos</a>
+        <a href="microbiologia-ecologia.php">Microbios y ecologia</a>
+        <a href="impacto-ambiental.php">Impacto ambiental</a>
+        <a href="perdida-alteracion-ecosistemas.php">Perdida y alteracion de los ecosistemas</a>
+        <a href="energias-renovables.php">Energias renovables</a>
     </nav>
+    <script>
+        function responsive() {
+            var x = document.getElementById("mainNavbar");
+            if (x.className === "navmain") {
+                x.className += " responsive";
+            } else {
+                x.className = "navmain";
+            }
+        }
+    </script>

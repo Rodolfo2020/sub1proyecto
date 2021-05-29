@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microbiologia y ecologia</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/navbar.css">
 </head>
 
 <body>
     <?php
-    $navbar = str_replace('>Microbios y ecologia</a>', ' class="active">Microbios y ecologia</a>', file_get_contents('..\views\navbar.php'));
+    $navbar = str_replace('<a href="microbiologia-ecologia.php">', '<a class="active" onclick="responsive()">', file_get_contents('navbar.php'));
     echo $navbar;
     ?>
     <main>
         <h1>Microbiologia y ecologia</h1>
-        <section>
+        <section class="subcontenido">
             <article>
                 <h2>Ecología microbiana</h2>
                 La ecología es la rama de la biología que estudia las relaciones entre los seres
@@ -34,8 +34,8 @@
                     <li>Los microbios viven en asociación con otros organismos</li>
                 </ul>
                 <div class="subimg">
-                        <img src="img/micro1.jpg" alt="microbios">
-                        <img src="img/micro2.jpg" alt="microbios">
+                        <img src="../img/micro1.jpg" alt="microbios">
+                        <img src="../img/micro2.jpg" alt="microbios">
                     </div>
             </article>
         </section>
