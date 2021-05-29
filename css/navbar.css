@@ -37,15 +37,21 @@ nav a:hover:not(.active) {
 
 @media screen and (max-width: 600px) {
     .navmain a:not(.active) {
-        display: none;
+        position: absolute;
+        top: 100vh;
+        opacity: 0;
     }
 
-    .active:before {
+    .active:after {
         content: "▼";
     }
 
     .navmain {
         flex-direction: column;
+    }
+
+    .navmain a {
+        outline: #1d6822 0.5px solid;
     }
 
     .navmain.responsive .active {
@@ -54,6 +60,9 @@ nav a:hover:not(.active) {
 
     .navmain.responsive a {
         display: flex;
+        position: initial;
+        opacity: 1;
         width: 100vw;
+        transition: opacity 1s linear;
     }
 }
