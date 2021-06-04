@@ -1,38 +1,40 @@
-nav.navmain {
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #205C49;
-    overflow: hidden;
-}
+@media screen {
+    nav.navmain {
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #205C49;
+        overflow: hidden;
+    }
 
-nav.navmain a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex: 1;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Helvetica';
-    font-size: 20px;
-    padding: 16px;
-}
+    nav.navmain a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 1;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Helvetica';
+        font-size: 20px;
+        padding: 16px;
+    }
 
-nav a:hover:not(.active) {
-    background-color: rgb(0, 70, 21);
-    color: rgb(169, 216, 255);
-}
+    nav a:hover:not(.active) {
+        background-color: rgb(0, 70, 21);
+        color: rgb(169, 216, 255);
+    }
 
-.active:hover {
-    background-color: #40a143;
-    color: #d6ffd8;
-}
+    .active:hover {
+        background-color: #40a143;
+        color: #d6ffd8;
+    }
 
-.active {
-    background-color: #4CAF50;
-    color: white;
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -64,5 +66,11 @@ nav a:hover:not(.active) {
         opacity: 1;
         width: 100vw;
         transition: opacity 1s linear;
+    }
+}
+
+@media print {
+    nav {
+        display: none;
     }
 }
